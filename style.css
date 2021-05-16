@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    font-family:  sans-serif;
+    /* background: black; */
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background: linear-gradient(to right,rgba(34, 13, 48, 1),rgba(90, 0, 54,0.9),rgba(140, 1, 70,0.5)), url('./media/pexels-asim-alnamat-343720.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    padding: 1rem 0 0 0;  
+}
+
+
+.logo {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.logo img{
+    display: block;
+}
+.logo .logo-brief{
+    transform: translateX(4px);
+    
+}
+.logo-brief h3{
+    color:#fff;;
+}
+.logo-brief p{
+    color: #fff;;
+    font-size: 15px;
+}
+.link{
+    width: 200px;
+    height: 90px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 7rem;
+    justify-content: flex-end;
+}
+.link a{
+    align-self: center;
+    text-decoration: none;
+    color: initial;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 12px 50px;
+    transform: translateY(-10px);
+
+}
+
+.link a:hover, .link a:active{
+    color: darkblue;
+    border: 2px solid blue;
+}
+
+
+.main{
+    min-height: 70vh;
+    display: flex;
+}
+
+
+.left-column{
+    display: flex;
+    align-items: center;
+}
+.left-column ul{
+    height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+    transform: translateY(-40px);
+}
+
+.left-column ul li{
+    list-style: url('./media/path12.png');
+}
+.left-column ul li a{
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+.left-column ul li a:hover,.left-column ul li a:active{
+    color: #fff;
+}
+section{
+    display: flex;
+    padding:10vh 10vw;
+}
+.sec-one,.sec-two{
+    min-height: 50vh;
+}
+.sec-one{
+    width: 35%;
+    position: relative;
+}
+.sec-one h1{
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    min-width: 70%;
+    color: #fff;
+  
+}
+.sec-one h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    width: 92%;
+    border-bottom:2px solid #fff;
+    height: 5rem;
+}
+
+.sec-one p{
+    width: 100%;
+    margin: 0.8rem 0;
+    line-height: 25px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    word-spacing: 4px;
+    color: #fff;
+}
+
+.call-to{
+    padding: 1.1rem 0 ;
+}
+.call-to a{
+    text-decoration: none;
+    padding: 12px 36px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px 20px 20px 20px;
+}
+
+
+.call-to a:hover, .call-to a:active{
+    color: darkblue;
+    border: 2px solid blue;
+}
+
+
+
+.sec-two > object{
+    transform: translate(2em,1.5rem);
+}
+
+
+footer{
+    min-height: 10vh;
+    display: flex;
+}
+footer > div{
+    width: 33.3%;
+}
+
+.deco{
+    display: flex;
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #fff;
+}
+.deco span{
+    color: red;
+    padding-left:5px;
+}
+
+
+footer > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.social > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
